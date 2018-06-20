@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Shanaya</string>
+    <string name="title_activity_trainee">Trainee</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_employee">Employee</string>
+    <string name="title_activity_hr">HR</string>
+    <string name="title_activity_vendor">Vendor</string>
+    <string name="title_activity_employee__sales">Employee_Sales</string>
+    <string name="title_activity_employee__sales__manager">Employee_Sales_Manager</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_employee__sales_my_subordinate">Employee_Sales_mySubordinate
+    </string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>

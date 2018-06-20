@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/firstsalesemployee"
+            android:icon="@drawable/timesheet"
+            android:title="Time Sheet" />
+        <item
+            android:id="@+id/secondsalesemployee"
+            android:icon="@drawable/payroll"
+            android:title="Payrol" />
+        <item
+            android:id="@+id/thirdsalesemployee"
+            android:icon="@drawable/attendance"
+            android:title="Attendance" />
+        <item
+            android:id="@+id/fourthsalesemployee"
+            android:icon="@drawable/leave"
+            android:title="Leave" />
+
+        <item
+            android:id="@+id/fifthsalesemployee"
+            android:icon="@drawable/forms"
+            android:title="Joining Form" />
+        <item
+            android:id="@+id/customerssalesemployeeID"
+            android:icon="@drawable/customers"
+            android:title="Customers" />
+
+        <item
+            android:id="@+id/leadssalesemployeeID"
+            android:icon="@drawable/forms"
+            android:title="Leads" />
+
+        <item
+            android:id="@+id/oppurtunitysalesemployeeID"
+            android:icon="@drawable/forms"
+            android:title="Oppurtunities" />
+
+        <item
+            android:id="@+id/phonecalsssalesemployeeID"
+            android:icon="@drawable/phonecalls"
+            android:title="Phone calls" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/comm1"
+                android:icon="@drawable/share"
+                android:title="Share"/>
+            <item
+                android:id="@+id/comm2"
+                android:icon="@drawable/contact_us"
+                android:title="Contact us"/>
+            <item
+                android:id="@+id/comm3"
+                android:icon="@drawable/rate_us"
+                android:title="Rate us"/>
+
+            <item
+                android:id="@+id/comm4"
+                android:icon="@drawable/logout"
+                android:title="Log Out"/>
+        </menu>
+    </item>
+
+</menu>

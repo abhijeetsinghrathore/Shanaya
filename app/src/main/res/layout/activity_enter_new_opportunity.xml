@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterNewOpportunity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Opportunity Details"
+            android:textSize="25sp"
+            android:layout_margin="10dp"
+            android:id="@+id/newopportunitydetailsID"
+            android:layout_centerHorizontal="true"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/newopportunitycard1"
+            android:layout_below="@+id/newopportunitydetailsID"
+            android:elevation="20dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Subject"
+                    android:gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:textSize="20sp"
+                    android:id="@+id/subjectID"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Describe the opportunity"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/subjectID"
+                    android:id="@+id/descriptionID"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/linear1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/descriptionID"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/dateofopportunityID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="3"
+                        android:hint="DD/MM/YYYY"
+                        android:inputType="date"
+                        android:drawableLeft="@drawable/dob"
+                        android:drawablePadding="3dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignRight="@+id/dob"
+                        android:layout_weight="1"
+                        android:src="@drawable/calendar"
+                        android:id="@+id/calendaropportunityID"
+                        android:padding="5dp"/>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Expected Revenue"
+                    android:textSize="15sp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/expectedrevenuetextID"
+                    android:layout_below="@+id/linear1"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/linear2"
+                    android:layout_below="@+id/expectedrevenuetextID"
+                    >
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="0.00"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="at"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="0"
+                        android:inputType="numberDecimal"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="%"
+                        android:textSize="15sp"
+                        android:layout_weight="1"
+                        />
+
+
+
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/newopportunitycard2"
+            android:layout_below="@+id/newopportunitycard1"
+            android:elevation="20dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Company name"
+                    android:id="@+id/companynameID"
+                    android:layout_margin="10dp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Customer"
+                    android:id="@+id/customerID"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/companynameID"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Product name"
+                    android:id="@+id/productnameID"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/customerID"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contact name"
+                    android:id="@+id/contactnameID"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/productnameID"
+                    />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/newopportunitycard3"
+            android:layout_below="@+id/newopportunitycard2"
+            android:elevation="20dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:id="@+id/emailID"
+                    android:layout_margin="10dp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone"
+                    android:id="@+id/phoneID"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/emailID"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile"
+                    android:id="@+id/mobileID"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/phoneID"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Fax"
+                    android:id="@+id/faxID"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/mobileID"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Address"
+                    android:id="@+id/addressID"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/faxID"
+                    />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/newopportunitycard4"
+            android:layout_below="@+id/newopportunitycard3"
+            android:elevation="20dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Sales person"
+                    android:id="@+id/salespersonID"
+                    android:layout_margin="10dp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Sales Team"
+                    android:id="@+id/salesteamID"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/salespersonID"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tags"
+                    android:id="@+id/tagsID"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/salesteamID"
+                    />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/newopportunitycard5"
+            android:layout_below="@+id/newopportunitycard4"
+            android:elevation="20dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Notes and Info"
+                    android:gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:textSize="20sp"
+                    android:id="@+id/notestextID"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Internal Notes"
+                    android:id="@+id/internalnotesID"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/notestextID"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="External Info"
+                    android:id="@+id/externalinfoID"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/internalnotesID"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/newopportunitycard6"
+            android:layout_below="@+id/newopportunitycard5"
+            android:elevation="20dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Next Action"
+                    android:gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:textSize="20sp"
+                    android:id="@+id/nextactionID"/>
+                <LinearLayout
+                    android:id="@+id/linear3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nextactionID"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/dateofnextactionID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="3"
+                        android:hint="DD/MM/YYYY"
+                        android:inputType="date"
+                        android:drawableLeft="@drawable/dob"
+                        android:drawablePadding="3dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignRight="@+id/dob"
+                        android:layout_weight="1"
+                        android:src="@drawable/calendar"
+                        android:id="@+id/calendarnextactionID"
+                        android:padding="5dp"/>
+
+                </LinearLayout>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:hint="e.g: Call for quotation"
+                    android:layout_below="@+id/linear3"
+                    android:id="@+id/actionID"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Expected Closing"
+                    android:textSize="20sp"
+                    android:id="@+id/expectedclosingtextID"
+                    android:layout_below="@+id/actionID"
+                    android:layout_margin="10dp"
+                    android:gravity="center_horizontal"/>
+
+                <LinearLayout
+                    android:id="@+id/linear4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/expectedclosingtextID"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/dateofclosingID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="3"
+                        android:hint="DD/MM/YYYY"
+                        android:inputType="date"
+                        android:drawableLeft="@drawable/dob"
+                        android:drawablePadding="3dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignRight="@+id/dob"
+                        android:layout_weight="1"
+                        android:src="@drawable/calendar"
+                        android:id="@+id/calendarclosingID"
+                        android:padding="5dp"/>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/newopportunitycard7"
+            android:layout_below="@+id/newopportunitycard6"
+            android:elevation="20dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Priority"
+                    android:gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:textSize="20sp"
+                    android:id="@+id/priorityID"/>
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ratingbarID"
+                    android:layout_below="@+id/priorityID"
+                    android:numStars="5"
+                    android:foregroundGravity="center"
+                    android:layout_centerHorizontal="true"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:layout_width="121dp"
+            android:layout_height="50dp"
+            android:text="SAVE"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_button"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/newopportunitycard7"
+            android:id="@+id/saveopportunityID"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

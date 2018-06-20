@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Continue as"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    android:textSize="30sp"
+    android:textColor="@color/colorPrimary"
+    android:id="@+id/continueAsID"
+    />
+
+    <Button
+        android:id="@+id/expandableButton1"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_button"
+        android:drawableRight="@drawable/dropdown"
+        android:onClick="expandableButton1"
+        android:paddingRight="10dp"
+        android:text="Sales"
+        android:layout_below="@+id/continueAsID"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"/>
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/expandableLayout1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/expandableButton1"
+        app:ael_duration="400"
+        app:ael_expanded="false"
+        app:ael_interpolator="linear"
+        app:ael_orientation="vertical"
+        android:layout_centerHorizontal="true">
+
+       <LinearLayout
+           android:layout_width="250dp"
+           android:layout_height="100dp"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Sales Manager"
+               android:id="@+id/Sales1"
+               android:textSize="15sp"
+               android:gravity="center"
+               android:padding="10dp"
+               android:drawableRight="@drawable/rightarrow"
+               android:onClick="salesEmployeeManager"/>
+           <View
+               android:layout_width="fill_parent"
+               android:layout_height="2dp"
+               android:background="#c0c0c0"
+               />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Sales Employee"
+               android:onClick="salesEmployee"
+               android:id="@+id/Sales2"
+               android:textSize="15sp"
+               android:gravity="center"
+               android:padding="10dp"
+               android:drawableRight="@drawable/rightarrow"/>
+
+       </LinearLayout>
+
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+
+
+
+    <Button
+        android:id="@+id/expandableButton2"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_button"
+        android:drawableRight="@drawable/dropdown"
+        android:onClick="expandableButton2"
+        android:paddingRight="10dp"
+        android:text="Technical"
+        android:layout_below="@+id/expandableLayout1"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        />
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/expandableLayout2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/expandableButton2"
+        app:ael_duration="400"
+        app:ael_expanded="false"
+        app:ael_interpolator="linear"
+        app:ael_orientation="vertical"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Technical Manager"
+                android:id="@+id/technical1"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:drawableRight="@drawable/rightarrow"
+                android:padding="10dp"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Project Manager"
+                android:id="@+id/technical2"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:drawableRight="@drawable/rightarrow" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Technical Employee"
+                android:id="@+id/technical3"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:drawableRight="@drawable/rightarrow" />
+
+
+        </LinearLayout>
+
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/expandableButton3"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_button"
+        android:drawableRight="@drawable/dropdown"
+        android:onClick="expandableButton3"
+        android:paddingRight="10dp"
+        android:text="Telecaller"
+        android:layout_below="@+id/expandableLayout2"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"/>
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/expandableLayout3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/expandableButton3"
+        app:ael_duration="400"
+        app:ael_expanded="false"
+        app:ael_interpolator="linear"
+        app:ael_orientation="vertical"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Telecaller1"
+                android:id="@+id/Telecaller1"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:drawableRight="@drawable/rightarrow"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Telecaller2"
+                android:id="@+id/Telecaller2"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:drawableRight="@drawable/rightarrow"/>
+
+        </LinearLayout>
+
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/expandableButton4"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_button"
+        android:drawableRight="@drawable/dropdown"
+        android:onClick="expandableButton4"
+        android:paddingRight="10dp"
+        android:text="Analyst"
+        android:layout_below="@+id/expandableLayout3"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"/>
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/expandableLayout4"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/expandableButton4"
+        app:ael_duration="400"
+        app:ael_expanded="false"
+        app:ael_interpolator="linear"
+        app:ael_orientation="vertical"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Analyst"
+                android:id="@+id/Analyst1"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:drawableRight="@drawable/rightarrow"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Analyst2"
+                android:id="@+id/Analyst2"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:drawableRight="@drawable/rightarrow"/>
+
+        </LinearLayout>
+
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/expandableButton5"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_button"
+        android:drawableRight="@drawable/dropdown"
+        android:onClick="expandableButton5"
+        android:paddingRight="10dp"
+        android:text="Finance"
+        android:layout_below="@+id/expandableLayout4"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"/>
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/expandableLayout5"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/expandableButton5"
+        app:ael_duration="400"
+        app:ael_expanded="false"
+        app:ael_interpolator="linear"
+        app:ael_orientation="vertical"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Finance1"
+                android:id="@+id/Finance1"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:drawableRight="@drawable/rightarrow"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Finance2"
+                android:id="@+id/Finance2"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:drawableRight="@drawable/rightarrow"/>
+
+        </LinearLayout>
+
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+
+
+
+
+    <Button
+        android:id="@+id/expandableButton6"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_button"
+        android:drawableRight="@drawable/dropdown"
+        android:onClick="expandableButton6"
+        android:paddingRight="10dp"
+        android:text="Legal"
+        android:layout_below="@+id/expandableLayout5"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"/>
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/expandableLayout6"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/expandableButton6"
+        app:ael_duration="400"
+        app:ael_expanded="false"
+        app:ael_interpolator="linear"
+        app:ael_orientation="vertical"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Legal"
+                android:id="@+id/Legal1"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:drawableRight="@drawable/rightarrow"/>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Legal2"
+                android:id="@+id/Legal2"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:drawableRight="@drawable/rightarrow"/>
+
+        </LinearLayout>
+
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+</ScrollView>

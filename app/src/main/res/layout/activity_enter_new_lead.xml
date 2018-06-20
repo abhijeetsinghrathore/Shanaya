@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterNewLead">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Lead Details"
+            android:textSize="25sp"
+            android:layout_margin="10dp"
+            android:id="@+id/newleaddetailsID"
+            android:layout_centerHorizontal="true"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newleadcard1"
+        android:layout_below="@+id/newleaddetailsID"
+        android:elevation="20dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="10dp"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subject"
+            android:gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:id="@+id/subjectID"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Describe the lead"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/subjectID"
+            android:id="@+id/descriptionID"
+            />
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descriptionID"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/dateofleadID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="3"
+                android:hint="DD/MM/YYYY"
+                android:inputType="date"
+                android:drawableLeft="@drawable/dob"
+                android:drawablePadding="3dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignRight="@+id/dob"
+                android:layout_weight="1"
+                android:src="@drawable/calendar"
+                android:id="@+id/calendarID"
+                android:padding="5dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newleadcard2"
+        android:layout_below="@+id/newleadcard1"
+        android:elevation="20dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Company name"
+                android:id="@+id/companynameID"
+                android:layout_margin="10dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Customer"
+                android:id="@+id/customerID"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/companynameID"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product name"
+                android:id="@+id/productnameID"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/customerID"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact name"
+                android:id="@+id/contactnameID"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/productnameID"
+                />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/newleadcard3"
+        android:layout_below="@+id/newleadcard2"
+        android:elevation="20dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:id="@+id/emailID"
+            android:layout_margin="10dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            android:id="@+id/phoneID"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/emailID"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile"
+            android:id="@+id/mobileID"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/phoneID"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fax"
+            android:id="@+id/faxID"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/mobileID"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:id="@+id/addressID"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/faxID"
+            />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/newleadcard4"
+            android:layout_below="@+id/newleadcard3"
+            android:elevation="20dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Sales person"
+                    android:id="@+id/salespersonID"
+                    android:layout_margin="10dp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Sales Team"
+                    android:id="@+id/salesteamID"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/salespersonID"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tags"
+                    android:id="@+id/tagsID"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/salesteamID"
+                    />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/newleadcard5"
+            android:layout_below="@+id/newleadcard4"
+            android:elevation="20dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Notes and Info"
+                    android:gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:textSize="20sp"
+                    android:id="@+id/notestextID"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Internal Notes"
+                    android:id="@+id/internalnotesID"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/notestextID"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="External Info"
+                    android:id="@+id/externalinfoID"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/internalnotesID"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/newleadcard6"
+            android:layout_below="@+id/newleadcard5"
+            android:elevation="20dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp"
+            >
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Set Priority"
+                    android:gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:textSize="20sp"
+                    android:id="@+id/priorityID"/>
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ratingbarID"
+                    android:layout_below="@+id/priorityID"
+                    android:numStars="5"
+                    android:foregroundGravity="center"
+                    android:layout_centerHorizontal="true"
+                    />
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:layout_width="121dp"
+            android:layout_height="50dp"
+            android:text="SAVE"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_button"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/newleadcard6"
+            android:id="@+id/saveLeadID"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

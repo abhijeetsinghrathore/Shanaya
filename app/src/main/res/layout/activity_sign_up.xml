@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Sign_up"
+
+
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/icon"
+        android:id="@+id/iconID"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Shanaya"
+        android:id="@+id/WelcomeID"
+        android:layout_below="@+id/iconID"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First name"
+        android:id="@+id/nameID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/WelcomeID"
+        android:drawableLeft="@drawable/person"
+        android:drawablePadding="3dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        android:id="@+id/lastnameID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/nameID"
+        android:drawableLeft="@drawable/person"
+        android:drawablePadding="3dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:id="@+id/EmailID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/lastnameID"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="3dp"/>
+
+    <EditText
+        android:id="@+id/passwordID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Password"
+        android:layout_below="@+id/EmailID"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="3dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:id="@+id/confirmID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/passwordID"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/confirmpass"
+        android:drawablePadding="3dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile no"
+        android:layout_below="@id/confirmID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="phone"
+        android:id="@+id/mobnumID"
+        android:drawableLeft="@drawable/contact"
+        android:drawablePadding="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobnumID"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/dobID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="3"
+            android:hint="DD/MM/YYYY"
+            android:inputType="date"
+            android:drawableLeft="@drawable/dob"
+            android:drawablePadding="3dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignRight="@+id/dob"
+            android:layout_weight="1"
+            android:src="@drawable/calendar"
+            android:id="@+id/calendarID"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear2"
+        android:layout_below="@id/linear1"
+        android:orientation="horizontal"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Role"
+            android:layout_weight="3"
+            android:textSize="18sp"
+            android:layout_margin="5dp"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner1"
+            android:layout_margin="5dp">
+
+        </Spinner>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="121dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/rounded_button"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:id="@+id/SignUp2"
+        android:layout_below="@+id/linear2"/>
+
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

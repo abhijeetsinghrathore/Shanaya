@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Employee_Sales_Manager_EightFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Employee ID"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Latitude"
+        android:layout_margin="10dp"
+        android:id="@+id/enteredlatitude"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Longitude"
+        android:layout_margin="10dp"
+        android:id="@+id/enteredlongitude"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Find Location"
+        android:background="@drawable/rounded_button"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:id="@+id/findlocationbutton"
+        />
+</LinearLayout>

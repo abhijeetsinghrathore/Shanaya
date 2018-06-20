@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/first"
+            android:icon="@drawable/work"
+            android:title="Recruitment Management" />
+        <item
+            android:id="@+id/second"
+            android:icon="@drawable/forms"
+            android:title="Joining Forms" />
+        <item
+            android:id="@+id/third"
+            android:icon="@drawable/video"
+            android:title="Upload your video resume" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/fourth"
+                android:icon="@drawable/share"
+                android:title="Share"
+                />
+            <item
+                android:id="@+id/fifth"
+                android:icon="@drawable/contact_us"
+                android:title="Contact us"/>
+            <item
+                android:id="@+id/sixth"
+                android:icon="@drawable/rate_us"
+                android:title="Rate us"/>
+
+            <item
+                android:id="@+id/seventh"
+                android:icon="@drawable/logout"
+                android:title="Log Out"/>
+
+        </menu>
+    </item>
+
+</menu>
