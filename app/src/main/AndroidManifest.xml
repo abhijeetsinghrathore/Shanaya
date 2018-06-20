@@ -90,7 +90,11 @@
         <activity
             android:name=".Employee_Tech_Manager"
             android:label="@string/title_activity_employee__tech__manager"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Employee_Tech_ProjectManager_NewProject" />
+        <activity android:name=".Employee_Tech_ProjectManager_ProjectDetails" />
+        <activity android:name=".Employee_Tech_ProjectManager_NewTask" />
+        <activity android:name=".Employee_Tech_ProjectManager_TaskDetails"></activity>
     </application>
 
 </manifest>
