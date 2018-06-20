@@ -60,4 +60,29 @@ public class EmployeeType extends AppCompatActivity {
 
 
     }
+
+
+    public void techEmployee(View v){
+        Intent i=new Intent(getApplicationContext(),Employee_Tech.class);
+        startActivity(i);
+
+
+    }
+
+    public void techProjectManager(View v){
+        Intent i=new Intent(getApplicationContext(),Employee_Tech_ProjectManager.class);
+        startActivity(i);
+
+
+    }
+    public void techManager(View v){
+        Intent i=new Intent(getApplicationContext(),Employee_Tech_Manager.class);
+        startActivity(i);
+
+
+    }
+
+
+
+
 }

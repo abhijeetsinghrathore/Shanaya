@@ -19,4 +19,8 @@
     <string name="title_activity_employee__sales_my_subordinate">Employee_Sales_mySubordinate
     </string>
     <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_employee__tech">Employee_Tech</string>
+    <string name="title_activity_employee__tech__project_manager">Employee_Tech_ProjectManager
+    </string>
+    <string name="title_activity_employee__tech__manager">Employee_Tech_Manager</string>
 </resources>

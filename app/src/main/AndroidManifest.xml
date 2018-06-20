@@ -78,7 +78,19 @@
             android:name=".Employee_Sales_mySubordinate"
             android:label="@string/title_activity_employee__sales_my_subordinate"
             android:theme="@style/AppTheme" />
-        <activity android:name=".EnterNewOpportunity"></activity>
+        <activity android:name=".EnterNewOpportunity" />
+        <activity
+            android:name=".Employee_Tech"
+            android:label="@string/title_activity_employee__tech"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Employee_Tech_ProjectManager"
+            android:label="@string/title_activity_employee__tech__project_manager"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Employee_Tech_Manager"
+            android:label="@string/title_activity_employee__tech__manager"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

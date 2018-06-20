@@ -119,11 +119,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Technical Manager"
-                android:id="@+id/technical1"
+                android:id="@+id/technicalmanagerID"
                 android:textSize="15sp"
                 android:gravity="center"
                 android:drawableRight="@drawable/rightarrow"
-                android:padding="10dp"/>
+                android:padding="10dp"
+                android:onClick="techManager"/>
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="2dp"
@@ -133,11 +134,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Project Manager"
-                android:id="@+id/technical2"
+                android:id="@+id/projectmanagerID"
                 android:textSize="15sp"
                 android:gravity="center"
                 android:padding="10dp"
-                android:drawableRight="@drawable/rightarrow" />
+                android:drawableRight="@drawable/rightarrow"
+                android:onClick="techProjectManager"/>
 
             <View
                 android:layout_width="fill_parent"
@@ -148,11 +150,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Technical Employee"
-                android:id="@+id/technical3"
+                android:id="@+id/technicalemployeeID"
                 android:textSize="15sp"
                 android:gravity="center"
                 android:padding="10dp"
-                android:drawableRight="@drawable/rightarrow" />
+                android:drawableRight="@drawable/rightarrow"
+                android:onClick="techEmployee"/>
 
 
         </LinearLayout>
