@@ -37,14 +37,85 @@
         app:cardCornerRadius="10dp"
         >
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Custom Seekbar"
             android:gravity="center_horizontal"
+            android:text="Project Stage"
             android:layout_margin="10dp"
-            android:textSize="30sp"
-            android:id="@+id/customseekbarID"/>
+            android:textSize="20sp"
+            android:id="@+id/projectstageID"
+            android:layout_centerHorizontal="true"/>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/customseekbarprojectmanagerID"
+             android:layout_below="@+id/projectstageID"
+             android:orientation="horizontal"
+             android:layout_margin="10dp">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/linearstagesID"
+             android:orientation="vertical">
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="1 : Analysis"
+                 android:textSize="15sp"
+                 android:layout_margin="5dp"/>
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="2 : Specification"
+                 android:textSize="15sp"
+                 android:layout_margin="5dp"/>
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="3 : Design"
+                 android:textSize="15sp"
+                 android:layout_margin="5dp"/>
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="4 : Development"
+                 android:textSize="15sp"
+                 android:layout_margin="5dp"/>
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="5 : Testing"
+                 android:textSize="15sp"
+                 android:layout_margin="5dp"/>
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="6 : Done"
+                 android:textSize="15sp"
+                 android:layout_margin="5dp"/>
+
+
+
+
+         </LinearLayout>
+
+
+
+         </LinearLayout>
+
+        </RelativeLayout>
 
     </android.support.v7.widget.CardView>
 
