@@ -4,9 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".Employee_Tech_ProjectManager"
-    tools:showIn="@layout/app_bar_employee__tech__project_manager"
-    android:id="@+id/content_employee_tech_project_managerID">
+    tools:context=".Employee_Tech_TaskDetails">
 
 </android.support.constraint.ConstraintLayout>

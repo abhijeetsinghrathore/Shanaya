@@ -1,9 +1,212 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Employee_Tech_ProjectManager_NewProject">
 
-</android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Project Details"
+            android:textSize="25sp"
+            android:layout_margin="10dp"
+            android:id="@+id/newprojectdetailsID"
+            android:layout_centerHorizontal="true"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/newprojectcard1"
+            android:layout_below="@+id/newprojectdetailsID"
+            android:elevation="20dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Project Name"
+                android:layout_margin="10dp"
+                android:id="@+id/projectnameID"
+                />
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Use Tasks"
+                android:id="@+id/usetaskID"
+                android:layout_below="@+id/projectnameID"
+                android:layout_margin="10dp"/>
+
+             <CheckBox
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="Issues"
+                 android:id="@+id/issuesID"
+                 android:layout_below="@+id/usetaskID"
+                 android:layout_margin="10dp"
+                 />
+            </RelativeLayout>
+
+
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/newprojectcard2"
+            android:layout_below="@+id/newprojectcard1"
+            android:elevation="20dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Project Manager"
+                    android:layout_margin="10dp"
+                    android:id="@+id/projectmanagerID"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Customer"
+                    android:layout_margin="10dp"
+                    android:id="@+id/customerID"
+                    android:layout_below="@+id/projectmanagerID"
+                    />
+
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/newprojectcard3"
+            android:layout_below="@+id/newprojectcard2"
+            android:elevation="20dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Alias"
+                android:layout_margin="10dp"
+                android:id="@+id/emailaliasID"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Incoming emails create"
+                android:layout_margin="10dp"
+                android:id="@+id/incomingemailscreateID"
+                android:layout_below="@+id/emailaliasID"
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Accept emails from"
+                android:layout_margin="10dp"
+                android:id="@+id/acceptemailsfromID"
+                android:layout_below="@+id/incomingemailscreateID"
+                />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/newprojectcard4"
+            android:layout_below="@+id/newprojectcard3"
+            android:elevation="20dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Team"
+                    android:gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:textSize="20sp"
+                    android:id="@+id/selectteamID"/>
+
+                <SearchView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:queryHint="Search employee name"
+                    android:id="@+id/searchviewID"
+                    android:layout_below="@+id/selectteamID">
+
+                </SearchView>
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <Button
+            android:layout_width="121dp"
+            android:layout_height="50dp"
+            android:text="SAVE"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_button"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/newprojectcard4"
+            android:id="@+id/saveProjectID"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
