@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,49 +7,220 @@
     tools:context=".Employee_Tech_ProjectManager_ProjectDetails">
 
 
-    <android.support.v7.widget.CardView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/newprojectcard1"
-        android:elevation="20dp"
-        android:layout_margin="20dp"
-        app:cardCornerRadius="10dp"
-        >
+        android:layout_height="wrap_content">
 
 
-        <RelativeLayout
+        <TextView
+            android:id="@+id/projectdetailsID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="Project Details"
+            android:textSize="20sp" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/projectcard1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/projectdetailsID"
+            android:layout_margin="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="10dp">
 
-            <TextView
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Project Details"
-                android:gravity="center_horizontal"
-                android:layout_margin="10dp"
-                android:textSize="30sp"
-                android:id="@+id/projectdetailsID"/>
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+                android:layout_height="match_parent">
 
-    <Button
-        android:layout_width="121dp"
-        android:layout_height="50dp"
-        android:text="Add Task"
-        android:layout_margin="10dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/rounded_button"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/newprojectcard1"
-        android:id="@+id/addtaskID"/>
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:id="@+id/tasklistID"
-        android:layout_below="@id/addtaskID">
-    </ListView>
+                <TextView
+                    android:id="@+id/projectnameID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Project Name" />
 
+                <CheckBox
+                    android:id="@+id/usetaskID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/projectnameID"
+                    android:layout_margin="10dp"
+                    android:text="Use Tasks" />
+
+                <CheckBox
+                    android:id="@+id/issuesID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/usetaskID"
+                    android:layout_margin="10dp"
+                    android:text="Issues" />
+            </RelativeLayout>
 
 
-</RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/projectcard2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/projectcard1"
+            android:layout_margin="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="10dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/projectmanagerID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Project Manager" />
+
+                <TextView
+                    android:id="@+id/customerID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/projectmanagerID"
+                    android:layout_margin="10dp"
+                    android:text="Customer" />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/projectcard3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/projectcard2"
+            android:layout_margin="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/emailaliasID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Email Alias" />
+
+                <TextView
+                    android:id="@+id/incomingemailscreateID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/emailaliasID"
+                    android:layout_margin="10dp"
+                    android:text="Incoming emails create"
+
+                    />
+
+                <TextView
+                    android:id="@+id/acceptemailsfromID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/incomingemailscreateID"
+                    android:layout_margin="10dp"
+                    android:text="Accept emails from" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/projectcard4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/projectcard3"
+            android:layout_margin="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/teamtextID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="Team"
+                    android:textSize="20sp" />
+
+                <ListView
+                    android:id="@+id/teamlistID"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_below="@id/teamtextID">
+
+                </ListView>
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/projectcard5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/projectcard4"
+            android:layout_margin="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tasklisttextID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="Task List"
+                    android:textSize="20sp" />
+
+
+                <ListView
+                    android:id="@+id/tasklistID"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/tasklisttextID">
+
+                </ListView>
+
+                <Button
+                    android:id="@+id/addtaskID"
+                    android:layout_width="121dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/rounded_button"
+                    android:text="Add Task"
+                    android:layout_below="@+id/tasklistID"/>
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+</ScrollView>

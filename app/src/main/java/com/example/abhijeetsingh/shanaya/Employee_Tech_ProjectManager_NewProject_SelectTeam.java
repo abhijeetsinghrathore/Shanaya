@@ -24,16 +24,9 @@ public class Employee_Tech_ProjectManager_NewProject_SelectTeam extends AppCompa
         sv=(SearchView)findViewById(R.id.searchviewID);
 
         final ArrayList<String> listemployees=new ArrayList<String>();
-        listemployees.add("1employee");
-        listemployees.add("2employee");
-        listemployees.add("3employee");
-        listemployees.add("4employee");
-        listemployees.add("5employee");
-        listemployees.add("6employee");
-        listemployees.add("7employee");
-        listemployees.add("8employee");
-        listemployees.add("9employee");
-        listemployees.add("10employee");
+        for(int i=0;i<50;i++)
+        listemployees.add(i+"employee");
+
 
         adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,listemployees);
         listofemployees=(ListView)findViewById(R.id.ListOfEmployeesID);
