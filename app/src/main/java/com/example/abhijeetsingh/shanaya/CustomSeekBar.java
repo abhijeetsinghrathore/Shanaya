@@ -31,12 +31,10 @@ public class CustomSeekBar {
             parent.setOrientation(LinearLayout.VERTICAL);
             mSeekBar = new SeekBar(mContext);
             mSeekBar.setMax(maxCount - 1);
-            mSeekBar.setRotation(90);
-
 
             // Add LinearLayout for labels below SeekBar
             mSeekLin = new LinearLayout(mContext);
-            mSeekLin.setOrientation(LinearLayout.VERTICAL);
+            mSeekLin.setOrientation(LinearLayout.HORIZONTAL);
             mSeekLin.setPadding(10, 0, 10, 0);
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                     LinearLayout.LayoutParams.MATCH_PARENT,
@@ -60,26 +58,19 @@ public class CustomSeekBar {
     private void addLabelsBelowSeekBar() {
         for (int count = 0; count < maxCount; count++) {
             TextView textView = new TextView(mContext);
-            if(count==0)
-                textView.setText("Analysis");
-            else if(count==1)
-                textView.setText("Specifications");
-            else if(count==2)
-                textView.setText("Design");
-            else if(count==3)
-                textView.setText("Documentation");
-            else if(count==4)
-                textView.setText("Development");
-            else if(count==5)
-                textView.setText("Testing");
-            else if(count==6)
-                textView.setText("Done");
-
+            textView.setText(String.valueOf(count));
             textView.setTextColor(textColor);
             textView.setGravity(Gravity.LEFT);
             mSeekLin.addView(textView);
             textView.setLayoutParams((count == maxCount - 1) ? getLayoutParams(0.0f) : getLayoutParams(1.0f));
         }
+    }
+
+
+    public void setCustomSeekbarProgress(int i)
+    {
+
+        mSeekBar.setProgress(i);
     }
 
     LinearLayout.LayoutParams getLayoutParams(float weight) {

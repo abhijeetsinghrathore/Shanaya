@@ -12,9 +12,15 @@ public class Employee_Tech_ProjectManager_TaskDetails extends AppCompatActivity 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_employee__tech__project_manager__task_details);
 
+
+
         LinearLayout mSeekLin = (LinearLayout) findViewById(R.id.customseekbarprojectmanagerID);
         CustomSeekBarProjectManager customSeekBar = new CustomSeekBarProjectManager(this, 7, Color.DKGRAY);
         customSeekBar.addSeekBar(mSeekLin);
+
+
+
+
 
     }
 }

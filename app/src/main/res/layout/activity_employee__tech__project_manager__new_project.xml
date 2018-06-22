@@ -167,17 +167,18 @@
                     android:text="Select Team"
                     android:gravity="center_horizontal"
                     android:layout_margin="10dp"
-                    android:textSize="20sp"
-                    android:id="@+id/selectteamID"/>
-
-                <SearchView
+                    android:textSize="18sp"
+                    android:id="@+id/selectteamID"
+                    android:drawableLeft="@drawable/search"
+                    android:onClick="selectTeam"/>
+                <ListView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:queryHint="Search employee name"
-                    android:id="@+id/searchviewID"
-                    android:layout_below="@+id/selectteamID">
+                    android:id="@+id/listofteamID">
 
-                </SearchView>
+                </ListView>
+
+
 
 
 

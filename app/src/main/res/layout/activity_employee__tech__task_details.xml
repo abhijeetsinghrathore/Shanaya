@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,41 +7,334 @@
     tools:context=".Employee_Tech_TaskDetails">
 
 
-    <android.support.v7.widget.CardView
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/taskdetailscard1"
-        android:elevation="20dp"
-        android:layout_margin="20dp"
-        app:cardCornerRadius="10dp">
+        android:layout_height="wrap_content">
 
         <TextView
+            android:id="@+id/taskdetailsID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="Task Details"
+            android:textSize="20sp" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/taskcard1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Task Details"
-            android:gravity="center_horizontal"
-            android:layout_margin="10dp"
-            android:textSize="30sp"
-            android:id="@+id/taskdetailsID"/>
+            android:layout_below="@+id/taskdetailsID"
+            android:layout_margin="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="10dp">
 
-    </android.support.v7.widget.CardView>
 
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/taskdetailscard2"
-        android:elevation="20dp"
-        android:layout_below="@id/taskdetailscard1"
-        android:layout_margin="20dp"
-        app:cardCornerRadius="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
+                <TextView
+                    android:id="@+id/tasksummarytextviewID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="Task Summary"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tasksummaryID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tasksummarytextviewID"
+                    android:layout_margin="10dp"
+                    android:text="This is Task Summary"
+                    android:textSize="15dp"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/taskcard2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taskcard1"
+            android:layout_margin="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/projectID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Project"
+                    android:textSize="15dp"/>
+
+                <TextView
+                    android:id="@+id/assignedtoID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/projectID"
+                    android:layout_margin="10dp"
+                    android:text="Assigned to"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/reviewerID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/assignedtoID"
+                    android:layout_margin="10dp"
+                    android:text="Reviewer"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/taskcard3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taskcard2"
+            android:layout_margin="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/startdatetextID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Starting date"
+                    android:textSize="15dp" />
+                <!--<LinearLayout-->
+                <!--android:id="@+id/linear1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!---->
+                <!--android:layout_marginBottom="8dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:orientation="horizontal">-->
+
+                <TextView
+                    android:id="@+id/startdateID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/startdatetextID"
+                    android:drawableLeft="@drawable/dob"
+                    android:drawablePadding="3dp"
+                    android:text="DD/MM/YYYY"
+                    android:textSize="15dp" />
+
+                <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_alignRight="@+id/startdateID"-->
+                <!--android:layout_weight="1"-->
+                <!--android:src="@drawable/calendar"-->
+                <!--android:id="@+id/startdatecalendarID"-->
+                <!--android:padding="5dp"/>-->
+
+                <!--</LinearLayout>-->
+                <TextView
+                    android:id="@+id/deadlinetextID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/startdateID"
+                    android:layout_margin="10dp"
+                    android:text="Deadline"
+                    android:textSize="15dp" />
+                <!--<LinearLayout-->
+                <!--android:id="@+id/linear2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/deadlinetextID"-->
+                <!--android:layout_marginBottom="8dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:orientation="horizontal">-->
+
+                <TextView
+                    android:id="@+id/deadlineID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/deadlinetextID"
+                    android:drawableLeft="@drawable/dob"
+                    android:drawablePadding="3dp"
+                    android:text="DD/MM/YYYY"
+                    android:textSize="15dp" />
+
+                <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_alignRight="@+id/deadlineID"-->
+                <!--android:layout_weight="1"-->
+                <!--android:src="@drawable/calendar"-->
+                <!--android:id="@+id/deadlinecalendarID"-->
+                <!--android:padding="5dp"/>-->
+
+                <!--</LinearLayout>-->
+
+                <TextView
+                    android:id="@+id/tagsID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/deadlineID"
+                    android:layout_margin="10dp"
+                    android:text="Tags"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/taskcard4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taskcard3"
+            android:layout_margin="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:id="@+id/descriptionID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Description"
+                android:textSize="15dp" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/taskdetailscard2"
+            android:layout_below="@id/taskcard4"
+            android:elevation="20dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Task Stage"
+                    android:layout_margin="10dp"
+                    android:textSize="20sp"
+                    android:id="@+id/projectstageID"
+                    android:layout_centerHorizontal="true"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/customseekbarID"
+                    android:layout_below="@+id/projectstageID"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearstagesID"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1 : Analysis"
+                            android:textSize="15sp"
+                            android:layout_margin="5dp"
+                            android:id="@+id/analysisID"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="2 : Specification"
+                            android:textSize="15sp"
+                            android:layout_margin="5dp"
+                            android:id="@+id/specificationID"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="3 : Design"
+                            android:textSize="15sp"
+                            android:layout_margin="5dp"
+                            android:id="@+id/designID"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="4 : Development"
+                            android:textSize="15sp"
+                            android:layout_margin="5dp"
+                            android:id="@+id/developmentID"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="5 : Testing"
+                            android:textSize="15sp"
+                            android:layout_margin="5dp"
+                            android:id="@+id/testingID"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="6 : Done"
+                            android:textSize="15sp"
+                            android:layout_margin="5dp"
+                            android:id="@+id/doneID"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
 
         <LinearLayout
-            android:id="@+id/seekbarLinearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:orientation="vertical"/>
-    </android.support.v7.widget.CardView>
+            android:layout_below="@id/taskdetailscard2"
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            android:gravity="center">
+            <Button
+                android:layout_width="121dp"
+                android:layout_height="50dp"
+                android:text="Edit Stage"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_button"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/editstageID"/>
+            <Button
+                android:layout_width="121dp"
+                android:layout_height="50dp"
+                android:text="Save Stage"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_button"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/savestageID"/>
+        </LinearLayout>
 
-</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

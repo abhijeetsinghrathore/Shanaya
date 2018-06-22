@@ -96,7 +96,8 @@
         <activity android:name=".Employee_Tech_ProjectManager_NewTask" />
         <activity android:name=".Employee_Tech_ProjectManager_TaskDetails" />
         <activity android:name=".Employee_Tech_ProjectDetails" />
-        <activity android:name=".Employee_Tech_TaskDetails"></activity>
+        <activity android:name=".Employee_Tech_TaskDetails" />
+        <activity android:name=".Employee_Tech_ProjectManager_NewProject_SelectTeam"></activity>
     </application>
 
 </manifest>

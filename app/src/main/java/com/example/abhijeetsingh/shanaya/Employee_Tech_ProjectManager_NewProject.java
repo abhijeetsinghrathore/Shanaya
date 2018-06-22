@@ -24,4 +24,12 @@ public class Employee_Tech_ProjectManager_NewProject extends AppCompatActivity {
             }
         });
     }
+
+    public View selectTeam(View v)
+    {
+        Intent i=new Intent(getBaseContext(),Employee_Tech_ProjectManager_NewProject_SelectTeam.class);
+        startActivity(i);
+        return v;
+
+    }
 }

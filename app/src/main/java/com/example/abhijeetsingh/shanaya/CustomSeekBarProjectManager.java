@@ -28,6 +28,7 @@ class CustomSeekBarProjectManager {
             parent.setOrientation(LinearLayout.VERTICAL);
             mSeekBar = new SeekBar(mContext);
             mSeekBar.setMax(maxCount - 1);
+            mSeekBar.setEnabled(false);
 
             // Add LinearLayout for labels below SeekBar
             mSeekLin = new LinearLayout(mContext);
@@ -82,5 +83,6 @@ class CustomSeekBarProjectManager {
                 LinearLayout.LayoutParams.WRAP_CONTENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT, weight);
     }
+
 
 }
