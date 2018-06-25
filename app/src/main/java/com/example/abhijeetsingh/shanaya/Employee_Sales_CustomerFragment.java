@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -41,6 +42,17 @@ public class Employee_Sales_CustomerFragment extends Fragment {
         dataadapter=new ArrayAdapter<String>(v.getContext(), android.R.layout.simple_list_item_1,listofcustomers);
         listviewcustomers=(ListView)v.findViewById(R.id.listOfCustomersID);
         listviewcustomers.setAdapter(dataadapter);
+
+
+        listviewcustomers.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent i =new Intent(getContext(),Employee_Sales_CustomerDetails.class);
+                startActivity(i);
+            }
+        });
+
+
 
 
 

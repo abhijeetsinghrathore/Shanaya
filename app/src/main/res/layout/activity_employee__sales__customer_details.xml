@@ -1,9 +1,287 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Employee_Sales_CustomerDetails">
 
-</android.support.constraint.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/customerdetailsID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/bungee_inline"
+            android:text="Customer Details"
+            android:textSize="25sp"
+            android:gravity="center"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/customercard1"
+            android:layout_below="@+id/customerdetailsID"
+            android:elevation="20dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/customerimageID"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:background="@color/colorAccent"
+                />
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/customercard2"
+            android:layout_below="@+id/customercard1"
+            android:elevation="20dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:id="@+id/customernameID"
+                    android:layout_margin="10dp"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Is a Company?"
+                    android:layout_below="@+id/customernameID"
+                    android:id="@+id/isacompanyID"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Company"
+                    android:id="@+id/companyID"
+                    android:layout_below="@+id/isacompanyID"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tags"
+                    android:id="@+id/tagsID"
+                    android:layout_below="@+id/companyID"
+                    android:layout_margin="10dp"/>
+
+            </RelativeLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/customercard3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/customercard2"
+            android:elevation="20dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/jobpositionID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Job Position" />
+
+
+                <TextView
+                    android:id="@+id/titleID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jobpositionID"
+                    android:layout_margin="10dp"
+                    android:text="Title" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/customercard4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/customercard3"
+            android:layout_margin="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/addressID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/bungee_inline"
+                    android:gravity="center_horizontal"
+                    android:text="Address"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/streetID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/customercard4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="63dp"
+                    android:text="Street" />
+
+                <TextView
+                    android:id="@+id/cityID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/streetID"
+                    android:layout_margin="10dp"
+                    android:text="City" />
+
+                <TextView
+                    android:id="@+id/stateID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cityID"
+                    android:layout_margin="10dp"
+                    android:text="State" />
+
+                <TextView
+                    android:id="@+id/zipID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/stateID"
+                    android:layout_margin="10dp"
+                    android:text="ZIP" />
+
+                <TextView
+                    android:id="@+id/countryID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/zipID"
+                    android:layout_margin="10dp"
+                    android:text="Country" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/customercard5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/customercard4"
+            android:layout_margin="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/websiteID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Website" />
+
+                <TextView
+                    android:id="@+id/phoneID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/websiteID"
+                    android:layout_margin="10dp"
+                    android:text="Phone" />
+
+                <TextView
+                    android:id="@+id/mobileID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/phoneID"
+                    android:layout_margin="10dp"
+                    android:text="Mobile" />
+
+                <TextView
+                    android:id="@+id/faxID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mobileID"
+                    android:layout_margin="10dp"
+                    android:text="Fax" />
+
+                <TextView
+                    android:id="@+id/emailID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/faxID"
+                    android:layout_margin="10dp"
+                    android:text="Email" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/customercard6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/customercard5"
+            android:layout_margin="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/notestextID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/bungee_inline"
+                    android:gravity="center_horizontal"
+                    android:text="Internal Notes"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/internalnotesID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/notestextID"
+                    android:layout_margin="10dp"
+                    android:text="Enter Internal Notes" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+
+</ScrollView>
+
