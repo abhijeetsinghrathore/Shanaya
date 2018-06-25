@@ -1,10 +1,11 @@
 package com.example.abhijeetsingh.shanaya;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -12,9 +13,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class Employee_Tech_Manager extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    DrawerLayout employeeTechManagerDrawer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,19 +26,21 @@ public class Employee_Tech_Manager extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+
+//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+//            }
+//        });
+
+        employeeTechManagerDrawer = (DrawerLayout) findViewById(R.id.employee_tech_manager_drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.addDrawerListener(toggle);
+                this, employeeTechManagerDrawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        employeeTechManagerDrawer.addDrawerListener(toggle);
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
@@ -44,9 +49,9 @@ public class Employee_Tech_Manager extends AppCompatActivity
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
+        employeeTechManagerDrawer= (DrawerLayout) findViewById(R.id.employee_tech_manager_drawer_layout);
+        if (employeeTechManagerDrawer.isDrawerOpen(GravityCompat.START)) {
+            employeeTechManagerDrawer.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
         }
@@ -78,24 +83,57 @@ public class Employee_Tech_Manager extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
-        int id = item.getItemId();
-
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        Fragment employeetechmanagerfrag = null; // create a Fragment Object
+        int itemId = item.getItemId(); // get selected menu item's id
+// check selected menu item's id and replace a Fragment Accordingly
+        if (itemId == R.id.firsttechemployeemanager) {
+            employeetechmanagerfrag = new Employee_FirstFragment();
+        } else if (itemId == R.id.secondtechemployeemanager) {
+            employeetechmanagerfrag = new Employee_SecondFragment();
+        } else if (itemId == R.id.thirdtechemployeemanager) {
+            employeetechmanagerfrag = new Employee_ThirdFragment();
+        }
+        else if (itemId == R.id.fourthtechemployeemanager) {
+            employeetechmanagerfrag = new Employee_FourthFragment();
+        }
+        else if (itemId == R.id.fifthtechemployeemanager) {
+            employeetechmanagerfrag = new Employee_FifthFragment();
         }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
+
+        else if(itemId==R.id.comm1) {
+            Intent i= new Intent(Intent.ACTION_SEND);
+            i.setType("text/plain");
+            i.putExtra(android.content.Intent.EXTRA_TEXT,"The link is www..");
+            startActivity(Intent.createChooser(i,"Share Via"));
+
+        }
+        else if(itemId==R.id.comm2){
+            Intent intent = new Intent(android.content.Intent.ACTION_SENDTO);
+            intent.setData(Uri.parse("mailto:ieshagupta09@gmail.com"));
+//                    intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"ieshagupta09@gmail.com"});
+//                    intent.putExtra(Intent.EXTRA_SUBJECT, "Subject");
+//                    intent.putExtra(Intent.EXTRA_TEXT, "I'm email body.");
+            startActivity(Intent.createChooser(intent, "Send Email"));
+        }
+        else if(itemId==R.id.comm4){
+            Intent i=new Intent(getBaseContext(),MainActivity.class);
+            startActivity(i);
+            finish();
+        }
+// display a toast message with menu item's title
+        Toast.makeText(getApplicationContext(),item.getTitle(), Toast.LENGTH_SHORT).show();
+        if (employeetechmanagerfrag != null) {
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            transaction.replace(R.id.content_employee_tech_managerID, employeetechmanagerfrag); // replace a Fragment with Frame Layout
+            transaction.commit(); // commit the changes
+            employeeTechManagerDrawer.closeDrawers(); // close the all open Drawer Views
+            return true;
+        }
+
+
+        employeeTechManagerDrawer = (DrawerLayout) findViewById(R.id.employee_tech_manager_drawer_layout);
+        employeeTechManagerDrawer.closeDrawer(GravityCompat.START);
         return true;
     }
 }

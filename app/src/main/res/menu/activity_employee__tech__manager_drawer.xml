@@ -5,33 +5,47 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/firsttechemployeemanager"
+            android:icon="@drawable/timesheet"
+            android:title="Time Sheet" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:id="@+id/secondtechemployeemanager"
+            android:icon="@drawable/payroll"
+            android:title="Payrol" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:id="@+id/thirdtechemployeemanager"
+            android:icon="@drawable/attendance"
+            android:title="Attendance" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/fourthtechemployeemanager"
+            android:icon="@drawable/leave"
+            android:title="Leave" />
+
+        <item
+            android:id="@+id/fifthtechemployeemanager"
+            android:icon="@drawable/forms"
+            android:title="Joining Form" />
     </group>
 
     <item android:title="Communicate">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:id="@+id/comm1"
+                android:icon="@drawable/share"
+                android:title="Share"/>
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:id="@+id/comm2"
+                android:icon="@drawable/contact_us"
+                android:title="Contact us"/>
+            <item
+                android:id="@+id/comm3"
+                android:icon="@drawable/rate_us"
+                android:title="Rate us"/>
+
+            <item
+                android:id="@+id/comm4"
+                android:icon="@drawable/logout"
+                android:title="Log Out"/>
         </menu>
     </item>
 

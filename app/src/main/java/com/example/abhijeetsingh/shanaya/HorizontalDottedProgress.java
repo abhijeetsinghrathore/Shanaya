@@ -30,7 +30,7 @@ public class HorizontalDottedProgress extends View {
         android.graphics.Paint paint = new android.graphics.Paint();
 
         //set the color for the dot that you want to draw
-        paint.setColor(android.graphics.Color.parseColor("#42A5F5"));
+        paint.setColor(getResources().getColor(R.color.white));
 
         //function to create dot
         createDot(canvas,paint);
@@ -48,9 +48,9 @@ public class HorizontalDottedProgress extends View {
         //here i have setted progress bar with 10 dots , so repeat and wnen i = mDotPosition  then increase the radius of dot i.e mBounceDotRadius
         for(int i = 0; i < mDotAmount; i++ ){
             if(i == mDotPosition){
-                canvas.drawCircle(50+(i*100), mBounceDotRadius, mBounceDotRadius, paint); //SPACING BETWEEN DOTS
+                canvas.drawCircle(50+(i*70), mBounceDotRadius, mBounceDotRadius, paint); //SPACING BETWEEN DOTS
             }else {
-                canvas.drawCircle(50+(i*100), mBounceDotRadius, mDotRadius, paint);
+                canvas.drawCircle(50+(i*70), mBounceDotRadius, mDotRadius, paint);
             }
         }
 
@@ -64,7 +64,7 @@ public class HorizontalDottedProgress extends View {
         int height;
 
         //calculate the view width
-        int calculatedWidth = (100*4);
+        int calculatedWidth = (70*4);
 
         width = calculatedWidth;
         height = (mBounceDotRadius*2);

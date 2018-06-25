@@ -5,51 +5,78 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Sign_in"
-    android:background="@drawable/back1">
-    <ImageView
-        android:layout_width="268dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp"
-        android:src="@drawable/icon"
-        android:id="@+id/icon"/>
+    android:background="@drawable/background_blur">
+    <!--<ImageView-->
+        <!--android:layout_width="268dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="22dp"-->
+        <!--android:src="@drawable/icon"-->
+        <!--android:id="@+id/icon"/>-->
 
 
-
-
-
-    <EditText
+    <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/emailtext"
-        android:layout_margin="5dp"
-        android:hint="Email"
-        android:layout_below="@+id/icon"
-        android:drawableLeft="@drawable/email"
-        android:drawablePadding="8dp"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/emailtext"
-        android:layout_margin="5dp"
-        android:layout_marginBottom="15dp"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:id="@+id/passwordtext"
-        android:drawableLeft="@drawable/password"
-        android:drawablePadding="8dp"/>
+        android:layout_centerVertical="true"
+        android:elevation="20dp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="10dp">
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="Forgot password ?"
-        android:layout_below="@+id/passwordtext"
-        android:id="@+id/forgotpass"
-        android:layout_marginTop="20dp"
-        android:textSize="15sp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/emailtext"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Email"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="8dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailtext"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="15dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:id="@+id/passwordtext"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="8dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Forgot password ?"
+                android:layout_below="@+id/passwordtext"
+                android:id="@+id/forgotpass"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:layout_marginBottom="20dp"/>
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
 
     <Button
         android:id="@+id/button3"
@@ -59,7 +86,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="35dp"
         android:text="Sign In"
-        android:textColor="#ffffff"
+        android:textColor="@color/colorPrimary"
         android:background="@drawable/rounded_button"/>
 
 

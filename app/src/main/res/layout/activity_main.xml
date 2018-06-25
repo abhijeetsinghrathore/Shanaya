@@ -5,15 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/back1">
+    android:background="@drawable/background"
+    >
 
-    <ImageView
-        android:layout_width="268dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp"
-        android:src="@drawable/icon" />
+    <!--<ImageView-->
+        <!--android:layout_width="268dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="22dp"-->
+        <!--android:src="@drawable/icon" />-->
 
     <Button
         android:id="@+id/button"
@@ -23,8 +24,9 @@
         android:layout_above="@+id/button2"
         android:text="Sign In"
         android:background="@drawable/rounded_button"
-        android:textColor="#FFFFFF"
-        android:layout_marginBottom="10dp"/>
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="10dp"
+        />
 
     <Button
         android:id="@+id/button2"
@@ -34,7 +36,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="50dp"
         android:text="Sign Up"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/colorPrimary"
         android:background="@drawable/rounded_button"/>
 
 </RelativeLayout>

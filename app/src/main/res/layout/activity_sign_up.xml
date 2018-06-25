@@ -4,199 +4,205 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".Sign_up"
+    android:orientation="vertical"
+    tools:context=".Sign_up">
 
-
-    >
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
+        android:layout_height="wrap_content">
 
-    <RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-
-    >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
 
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:src="@drawable/icon"
-        android:id="@+id/iconID"
-        android:layout_centerHorizontal="true" />
+            <TextView
+                android:id="@+id/WelcomeID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Welcome to Shanaya"
+                android:layout_margin="20dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30sp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Welcome to Shanaya"
-        android:id="@+id/WelcomeID"
-        android:layout_below="@+id/iconID"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:textSize="30sp"
-        android:textColor="@color/colorPrimary"
-        />
+            <android.support.v7.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/WelcomeID"
+                android:elevation="20dp"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp">
 
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="First name"
-        android:id="@+id/nameID"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_below="@+id/WelcomeID"
-        android:drawableLeft="@drawable/person"
-        android:drawablePadding="3dp"
-        />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Last Name"
-        android:id="@+id/lastnameID"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_below="@+id/nameID"
-        android:drawableLeft="@drawable/person"
-        android:drawablePadding="3dp"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Email"
-        android:id="@+id/EmailID"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_below="@+id/lastnameID"
-        android:drawableLeft="@drawable/email"
-        android:drawablePadding="3dp"/>
-
-    <EditText
-        android:id="@+id/passwordID"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:hint="Password"
-        android:layout_below="@+id/EmailID"
-        android:drawableLeft="@drawable/password"
-        android:drawablePadding="3dp"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Confirm Password"
-        android:id="@+id/confirmID"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_below="@+id/passwordID"
-        android:inputType="textPassword"
-        android:drawableLeft="@drawable/confirmpass"
-        android:drawablePadding="3dp"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Mobile no"
-        android:layout_below="@id/confirmID"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:inputType="phone"
-        android:id="@+id/mobnumID"
-        android:drawableLeft="@drawable/contact"
-        android:drawablePadding="10dp"/>
-
-    <LinearLayout
-        android:id="@+id/linear1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/mobnumID"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/dobID"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_weight="3"
-            android:hint="DD/MM/YYYY"
-            android:inputType="date"
-            android:drawableLeft="@drawable/dob"
-            android:drawablePadding="3dp"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_alignRight="@+id/dob"
-            android:layout_weight="1"
-            android:src="@drawable/calendar"
-            android:id="@+id/calendarID"
-            android:padding="5dp"/>
-
-    </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/linear2"
-        android:layout_below="@id/linear1"
-        android:orientation="horizontal"
-        android:layout_marginBottom="25dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp">
+                    <EditText
+                        android:id="@+id/nameID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="30dp"
+                        android:drawableLeft="@drawable/person"
+                        android:drawablePadding="3dp"
+                        android:hint="First name" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Role"
-            android:layout_weight="3"
-            android:textSize="18sp"
-            android:layout_margin="5dp"/>
-        <Spinner
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/spinner1"
-            android:layout_margin="5dp">
+                    <EditText
+                        android:id="@+id/lastnameID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nameID"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:drawableLeft="@drawable/person"
+                        android:drawablePadding="3dp"
+                        android:hint="Last Name" />
 
-        </Spinner>
+                    <EditText
+                        android:id="@+id/EmailID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/lastnameID"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:drawableLeft="@drawable/email"
+                        android:drawablePadding="3dp"
+                        android:hint="Email" />
+
+                    <EditText
+                        android:id="@+id/passwordID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/EmailID"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:drawableLeft="@drawable/password"
+                        android:drawablePadding="3dp"
+                        android:hint="Password"
+                        android:inputType="textPassword" />
+
+                    <EditText
+                        android:id="@+id/confirmID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/passwordID"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:drawableLeft="@drawable/confirmpass"
+                        android:drawablePadding="3dp"
+                        android:hint="Confirm Password"
+                        android:inputType="textPassword" />
+
+                    <EditText
+                        android:id="@+id/mobnumID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/confirmID"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:drawableLeft="@drawable/contact"
+                        android:drawablePadding="10dp"
+                        android:hint="Mobile no"
+                        android:inputType="phone" />
+
+                    <LinearLayout
+                        android:id="@+id/linear1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/mobnumID"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/dobID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_weight="3"
+                            android:drawableLeft="@drawable/dob"
+                            android:drawablePadding="3dp"
+                            android:hint="DD/MM/YYYY"
+                            android:inputType="date" />
+
+                        <ImageView
+                            android:id="@+id/calendarID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignRight="@+id/dob"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:src="@drawable/calendar" />
+
+                    </LinearLayout>
 
 
-    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linear2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/linear1"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
 
-    <Button
-        android:layout_width="121dp"
-        android:layout_height="50dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp"
-        android:background="@drawable/rounded_button"
-        android:text="Sign Up"
-        android:textColor="@color/white"
-        android:id="@+id/SignUp2"
-        android:layout_below="@+id/linear2"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="3"
+                            android:text="Role"
+                            android:textSize="18sp" />
+
+                        <Spinner
+                            android:id="@+id/spinner1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp">
+
+                        </Spinner>
+                    </LinearLayout>
 
 
+                </RelativeLayout>
 
-    </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <Button
+                android:id="@+id/SignUp2"
+                android:layout_width="121dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/card"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/rounded_button"
+                android:text="Sign Up"
+                android:textColor="@color/colorPrimary" />
+
+
+        </RelativeLayout>
 
     </ScrollView>
-
 
 
 </LinearLayout>

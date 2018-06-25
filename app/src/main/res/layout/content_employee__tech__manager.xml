@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Employee_Tech_Manager"
-    tools:showIn="@layout/app_bar_employee__tech__manager">
+    tools:showIn="@layout/app_bar_employee__tech__manager"
+    android:id="@+id/content_employee_tech_managerID">
 
 </android.support.constraint.ConstraintLayout>

@@ -42,7 +42,7 @@ public class Sign_up extends AppCompatActivity implements AdapterView.OnItemSele
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
-        getWindow().setBackgroundDrawableResource(R.drawable.back_blur);
+        getWindow().setBackgroundDrawableResource(R.drawable.background_blur);
         SignUp2=(Button)findViewById(R.id.SignUp2);
         fname=(EditText)findViewById(R.id.nameID);
         lname=(EditText)findViewById(R.id.lastnameID);

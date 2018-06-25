@@ -29,7 +29,7 @@
         android:paddingRight="10dp"
         android:text="Sales"
         android:layout_below="@+id/continueAsID"
-        android:textColor="#fff"
+        android:textColor="@color/colorPrimary"
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"/>
 
@@ -94,7 +94,7 @@
         android:paddingRight="10dp"
         android:text="Technical"
         android:layout_below="@+id/expandableLayout1"
-        android:textColor="#fff"
+        android:textColor="@color/colorPrimary"
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"
         />
@@ -180,7 +180,7 @@
         android:paddingRight="10dp"
         android:text="Telecaller"
         android:layout_below="@+id/expandableLayout2"
-        android:textColor="#fff"
+        android:textColor="@color/colorPrimary"
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"/>
 
@@ -251,7 +251,7 @@
         android:paddingRight="10dp"
         android:text="Analyst"
         android:layout_below="@+id/expandableLayout3"
-        android:textColor="#fff"
+        android:textColor="@color/colorPrimary"
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"/>
 
@@ -321,7 +321,7 @@
         android:paddingRight="10dp"
         android:text="Finance"
         android:layout_below="@+id/expandableLayout4"
-        android:textColor="#fff"
+        android:textColor="@color/colorPrimary"
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"/>
 
@@ -385,7 +385,7 @@
         android:paddingRight="10dp"
         android:text="Legal"
         android:layout_below="@+id/expandableLayout5"
-        android:textColor="#fff"
+        android:textColor="@color/colorPrimary"
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"/>
 
