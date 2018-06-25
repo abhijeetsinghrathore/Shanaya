@@ -17,6 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_margin="10dp"
+            android:fontFamily="@font/bungee_inline"
             android:text="Project Details"
             android:textSize="20sp" />
 
@@ -155,6 +156,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
+                    android:fontFamily="@font/bungee_inline"
                     android:gravity="center_horizontal"
                     android:text="Team"
                     android:textSize="20sp" />
@@ -188,6 +190,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
+                    android:fontFamily="@font/bungee_inline"
                     android:gravity="center_horizontal"
                     android:text="Tasks"
                     android:textSize="20sp" />

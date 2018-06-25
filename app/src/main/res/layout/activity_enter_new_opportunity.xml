@@ -12,13 +12,15 @@
         android:layout_height="match_parent">
 
         <TextView
+            android:id="@+id/newopportunitydetailsID"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/bungee_inline"
             android:text="New Opportunity Details"
             android:textSize="25sp"
-            android:layout_margin="10dp"
-            android:id="@+id/newopportunitydetailsID"
-            android:layout_centerHorizontal="true"/>
+            android:gravity="center"/>
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
@@ -36,13 +38,14 @@
                 android:layout_height="match_parent">
 
                 <TextView
+                    android:id="@+id/subjectID"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Subject"
-                    android:gravity="center_horizontal"
                     android:layout_margin="10dp"
-                    android:textSize="20sp"
-                    android:id="@+id/subjectID"/>
+                    android:fontFamily="@font/bungee_inline"
+                    android:gravity="center_horizontal"
+                    android:text="Subject"
+                    android:textSize="20sp" />
 
                 <EditText
                     android:layout_width="match_parent"
@@ -314,14 +317,16 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <TextView
+                    android:id="@+id/notestextID"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Notes and Info"
-                    android:gravity="center_horizontal"
                     android:layout_margin="10dp"
-                    android:textSize="20sp"
-                    android:id="@+id/notestextID"/>
+                    android:fontFamily="@font/bungee_inline"
+                    android:gravity="center_horizontal"
+                    android:text="Notes and Info"
+                    android:textSize="20sp" />
 
                 <EditText
                     android:layout_width="match_parent"
@@ -363,13 +368,14 @@
                 android:layout_height="match_parent">
 
                 <TextView
+                    android:id="@+id/nextactionID"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Next Action"
-                    android:gravity="center_horizontal"
                     android:layout_margin="10dp"
-                    android:textSize="20sp"
-                    android:id="@+id/nextactionID"/>
+                    android:fontFamily="@font/bungee_inline"
+                    android:gravity="center_horizontal"
+                    android:text="Next Action"
+                    android:textSize="20sp" />
                 <LinearLayout
                     android:id="@+id/linear3"
                     android:layout_width="match_parent"
@@ -410,14 +416,15 @@
                     android:id="@+id/actionID"/>
 
                 <TextView
+                    android:id="@+id/expectedclosingtextID"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Expected Closing"
-                    android:textSize="20sp"
-                    android:id="@+id/expectedclosingtextID"
                     android:layout_below="@+id/actionID"
                     android:layout_margin="10dp"
-                    android:gravity="center_horizontal"/>
+                    android:fontFamily="@font/bungee_inline"
+                    android:gravity="center_horizontal"
+                    android:text="Expected Closing"
+                    android:textSize="20sp" />
 
                 <LinearLayout
                     android:id="@+id/linear4"
@@ -498,13 +505,14 @@
                 android:layout_height="match_parent">
 
                 <TextView
+                    android:id="@+id/priorityID"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Set Priority"
-                    android:gravity="center_horizontal"
                     android:layout_margin="10dp"
-                    android:textSize="20sp"
-                    android:id="@+id/priorityID"/>
+                    android:fontFamily="@font/bungee_inline"
+                    android:gravity="center_horizontal"
+                    android:text="Set Priority"
+                    android:textSize="20sp" />
                 <RatingBar
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -525,6 +533,7 @@
             android:layout_width="121dp"
             android:layout_height="50dp"
             android:text="SAVE"
+            android:textColor="@color/colorPrimary"
             android:layout_margin="10dp"
             android:layout_marginBottom="20dp"
             android:background="@drawable/rounded_button"

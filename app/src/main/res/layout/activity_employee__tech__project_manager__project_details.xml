@@ -18,6 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_margin="10dp"
+            android:fontFamily="@font/bungee_inline"
             android:text="Project Details"
             android:textSize="20sp" />
 
@@ -156,6 +157,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
+                    android:fontFamily="@font/bungee_inline"
                     android:gravity="center_horizontal"
                     android:text="Team"
                     android:textSize="20sp" />
@@ -190,6 +192,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
+                    android:fontFamily="@font/bungee_inline"
                     android:gravity="center_horizontal"
                     android:text="Task List"
                     android:textSize="20sp" />
@@ -212,6 +215,7 @@
                     android:layout_marginBottom="20dp"
                     android:background="@drawable/rounded_button"
                     android:text="Add Task"
+                    android:textColor="@color/colorPrimary"
                     android:layout_below="@+id/tasklistID"/>
 
 

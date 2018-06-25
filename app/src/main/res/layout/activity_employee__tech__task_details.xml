@@ -18,6 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_margin="10dp"
+            android:fontFamily="@font/bungee_inline"
             android:text="Task Details"
             android:textSize="20sp" />
 
@@ -40,6 +41,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
+                    android:fontFamily="@font/bungee_inline"
                     android:gravity="center_horizontal"
                     android:text="Task Summary"
                     android:textSize="20sp" />
@@ -233,14 +235,15 @@
                 android:layout_height="match_parent">
 
                 <TextView
+                    android:id="@+id/projectstageID"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/bungee_inline"
                     android:gravity="center_horizontal"
                     android:text="Task Stage"
-                    android:layout_margin="10dp"
-                    android:textSize="20sp"
-                    android:id="@+id/projectstageID"
-                    android:layout_centerHorizontal="true"/>
+                    android:textSize="20sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -322,6 +325,7 @@
                 android:layout_width="121dp"
                 android:layout_height="50dp"
                 android:text="Edit Stage"
+                android:textColor="@color/colorPrimary"
                 android:layout_margin="10dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/rounded_button"
@@ -331,6 +335,7 @@
                 android:layout_width="121dp"
                 android:layout_height="50dp"
                 android:text="Save Stage"
+                android:textColor="@color/colorPrimary"
                 android:layout_margin="10dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/rounded_button"
