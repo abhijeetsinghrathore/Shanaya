@@ -103,6 +103,9 @@ public class Employee_Sales extends AppCompatActivity
         else if (itemId == R.id.oppurtunitysalesemployeeID) {
             employeesalesfrag = new Employee_Sales_OppurtunitiesFragment();
         }
+        else if (itemId == R.id.customerssalesemployeeID) {
+            employeesalesfrag = new Employee_Sales_CustomerFragment();
+        }
         else if(itemId==R.id.comm1) {
             Intent i= new Intent(Intent.ACTION_SEND);
             i.setType("text/plain");

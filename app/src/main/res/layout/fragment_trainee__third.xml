@@ -30,5 +30,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="15dp"
         android:background="@drawable/rounded_button"
-        android:text="RECORD" />
+        android:text="RECORD"
+        android:textColor="@color/colorPrimary"/>
 </RelativeLayout>
