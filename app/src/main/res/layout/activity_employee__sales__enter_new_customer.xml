@@ -1,9 +1,343 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Employee_Sales_EnterNewCustomer">
 
-</android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/newcustomerdetailsID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/bungee_inline"
+            android:text="New Customer Details"
+            android:textSize="25sp"
+            android:gravity="center"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/newcustomercard1"
+            android:layout_below="@+id/newcustomerdetailsID"
+            android:elevation="20dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:id="@+id/customerimageID"
+                    android:layout_margin="10dp"
+                    android:layout_weight="3"
+                    android:background="@color/colorAccent"
+                    />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/customerimageID"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/customerimageID">
+
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:text="Add Image"
+                        android:textColor="@color/colorPrimary"
+                        android:background="@drawable/rounded_button"
+                        android:layout_margin="5dp"
+                        android:id="@+id/addimagebutton"
+                        />
+
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:text="Delete Image"
+                        android:textColor="@color/colorPrimary"
+                        android:background="@drawable/rounded_button"
+                        android:layout_margin="5dp"
+                        android:layout_below="@+id/addimagebutton"
+                        />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/newcustomercard2"
+            android:layout_below="@+id/newcustomercard1"
+            android:elevation="20dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:id="@+id/customernameID"
+                    android:layout_margin="10dp"/>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Is a Company?"
+                    android:layout_below="@+id/customernameID"
+                    android:id="@+id/isacompanyID"
+                    android:layout_margin="10dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Company"
+                    android:id="@+id/companyID"
+                    android:layout_below="@+id/isacompanyID"
+                    android:layout_margin="10dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tags"
+                    android:id="@+id/tagsID"
+                    android:layout_below="@+id/companyID"
+                    android:layout_margin="10dp"/>
+
+
+
+            </RelativeLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/newcustomercard3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/newcustomercard2"
+            android:elevation="20dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/jobpositionID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="Job Position" />
+
+
+                <EditText
+                    android:id="@+id/titleID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/jobpositionID"
+                    android:layout_margin="10dp"
+                    android:hint="Title" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/newcustomercard4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newcustomercard3"
+            android:layout_margin="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/addressID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/bungee_inline"
+                    android:gravity="center_horizontal"
+                    android:text="Address"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/streetID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addressID"
+                    android:layout_margin="10dp"
+                    android:hint="Street" />
+
+                <EditText
+                    android:id="@+id/cityID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/streetID"
+                    android:layout_margin="10dp"
+                    android:hint="City" />
+
+                <EditText
+                    android:id="@+id/stateID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cityID"
+                    android:layout_margin="10dp"
+                    android:hint="State" />
+
+                <EditText
+                    android:id="@+id/zipID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/stateID"
+                    android:layout_margin="10dp"
+                    android:hint="ZIP" />
+
+                <EditText
+                    android:id="@+id/countryID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/zipID"
+                    android:layout_margin="10dp"
+                    android:hint="Country" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/newcustomercard5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newcustomercard4"
+            android:layout_margin="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/websiteID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="Website" />
+
+                <EditText
+                    android:id="@+id/phoneID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/websiteID"
+                    android:layout_margin="10dp"
+                    android:hint="Phone" />
+
+                <EditText
+                    android:id="@+id/mobileID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/phoneID"
+                    android:layout_margin="10dp"
+                    android:hint="Mobile" />
+
+                <EditText
+                    android:id="@+id/faxID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mobileID"
+                    android:layout_margin="10dp"
+                    android:hint="Fax" />
+
+                <EditText
+                    android:id="@+id/emailID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/faxID"
+                    android:layout_margin="10dp"
+                    android:hint="Email" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/newcustomercard6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/newcustomercard5"
+            android:layout_margin="20dp"
+            android:elevation="20dp"
+            app:cardCornerRadius="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/notestextID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/bungee_inline"
+                    android:gravity="center_horizontal"
+                    android:text="Internal Notes"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/internalnotesID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/notestextID"
+                    android:layout_margin="10dp"
+                    android:hint="Enter Internal Notes" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:layout_width="121dp"
+            android:layout_height="50dp"
+            android:text="SAVE"
+            android:textColor="@color/colorPrimary"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_button"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/newcustomercard6"
+            android:id="@+id/saveCustomerID"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
