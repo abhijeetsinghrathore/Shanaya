@@ -29,7 +29,7 @@ public class Employee_Sales_EnterNewCustomer extends AppCompatActivity {
     String mCurrentPhotoPath;
     Uri photouri;
 
-    Button saveCustomer, addimage;
+    Button saveCustomer, addimage,deleteimage;
     ImageView customerImage;
 
     @Override
@@ -40,6 +40,8 @@ public class Employee_Sales_EnterNewCustomer extends AppCompatActivity {
 
         saveCustomer = (Button) findViewById(R.id.saveCustomerID);
         addimage = (Button) findViewById(R.id.addimagebutton);
+        deleteimage = (Button) findViewById(R.id.deleteimagebutton);
+        customerImage = (ImageView) findViewById(R.id.customerimageID);
 
         saveCustomer.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,6 +51,17 @@ public class Employee_Sales_EnterNewCustomer extends AppCompatActivity {
             }
         });
 
+        deleteimage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                customerImage.setImageDrawable(null);
+
+            }
+        });
+
+
+
+
         addimage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,7 +70,7 @@ public class Employee_Sales_EnterNewCustomer extends AppCompatActivity {
                 TextView gallery = (TextView) dialogview.findViewById(R.id.importfromgalleryID);
                 TextView camera = (TextView) dialogview.findViewById(R.id.opencameraID);
                 Button closedialog = (Button) dialogview.findViewById(R.id.closedialogbuttonID);
-                customerImage = (ImageView) findViewById(R.id.customerimageID);
+
 
                 addimagedialogbuilder.setView(dialogview);
                 final AlertDialog addimagedialog = addimagedialogbuilder.create();

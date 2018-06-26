@@ -70,6 +70,7 @@
                         android:background="@drawable/rounded_button"
                         android:layout_margin="5dp"
                         android:layout_below="@+id/addimagebutton"
+                        android:id="@+id/deleteimagebutton"
                         />
 
                 </RelativeLayout>
