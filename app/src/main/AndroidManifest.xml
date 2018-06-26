@@ -6,7 +6,9 @@
         android:name="android.hardware.camera"
         android:required="true" />
 
+
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -103,6 +105,19 @@
         <activity android:name=".Employee_Tech_ProjectManager_NewProject_SelectTeam" />
         <activity android:name=".Employee_Sales_EnterNewCustomer" />
         <activity android:name=".Employee_Sales_CustomerDetails"></activity>
+
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.abhijeetsingh.shanaya"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths">
+
+            </meta-data>
+        </provider>
     </application>
 
 </manifest>
