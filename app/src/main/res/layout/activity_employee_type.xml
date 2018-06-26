@@ -175,59 +175,59 @@
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:background="@drawable/rounded_button"
-        android:drawableRight="@drawable/dropdown"
+        android:drawableRight="@drawable/arrow_right"
         android:onClick="expandableButton3"
         android:paddingRight="10dp"
-        android:text="Telecaller"
+        android:text="Marketing"
         android:layout_below="@+id/expandableLayout2"
         android:textColor="@color/colorPrimary"
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"/>
 
-    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
-        android:id="@+id/expandableLayout3"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/expandableButton3"
-        app:ael_duration="400"
-        app:ael_expanded="false"
-        app:ael_interpolator="linear"
-        app:ael_orientation="vertical"
-        android:layout_centerHorizontal="true">
+    <!--<com.github.aakira.expandablelayout.ExpandableRelativeLayout-->
+        <!--android:id="@+id/expandableLayout3"-->
+        <!--android:layout_width="250dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/expandableButton3"-->
+        <!--app:ael_duration="400"-->
+        <!--app:ael_expanded="false"-->
+        <!--app:ael_interpolator="linear"-->
+        <!--app:ael_orientation="vertical"-->
+        <!--android:layout_centerHorizontal="true">-->
 
-        <LinearLayout
-            android:layout_width="250dp"
-            android:layout_height="100dp"
-            android:orientation="vertical">
+        <!--<LinearLayout-->
+            <!--android:layout_width="250dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:orientation="vertical">-->
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Telecaller1"
-                android:id="@+id/Telecaller1"
-                android:textSize="15sp"
-                android:gravity="center"
-                android:padding="10dp"
-                android:drawableRight="@drawable/rightarrow"/>
-            <View
-                android:layout_width="fill_parent"
-                android:layout_height="2dp"
-                android:background="#c0c0c0"
-                />
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Telecaller1"-->
+                <!--android:id="@+id/Telecaller1"-->
+                <!--android:textSize="15sp"-->
+                <!--android:gravity="center"-->
+                <!--android:padding="10dp"-->
+                <!--android:drawableRight="@drawable/rightarrow"/>-->
+            <!--<View-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="2dp"-->
+                <!--android:background="#c0c0c0"-->
+                <!--/>-->
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Telecaller2"
-                android:id="@+id/Telecaller2"
-                android:textSize="15sp"
-                android:gravity="center"
-                android:padding="10dp"
-                android:drawableRight="@drawable/rightarrow"/>
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Telecaller2"-->
+                <!--android:id="@+id/Telecaller2"-->
+                <!--android:textSize="15sp"-->
+                <!--android:gravity="center"-->
+                <!--android:padding="10dp"-->
+                <!--android:drawableRight="@drawable/rightarrow"/>-->
 
-        </LinearLayout>
+        <!--</LinearLayout>-->
 
-    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+    <!--</com.github.aakira.expandablelayout.ExpandableRelativeLayout>-->
 
 
 
@@ -250,7 +250,7 @@
         android:onClick="expandableButton4"
         android:paddingRight="10dp"
         android:text="Analyst"
-        android:layout_below="@+id/expandableLayout3"
+        android:layout_below="@+id/expandableButton3"
         android:textColor="@color/colorPrimary"
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"/>

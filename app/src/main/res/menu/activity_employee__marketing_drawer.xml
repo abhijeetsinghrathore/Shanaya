@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/firstemployeemarketing"
+            android:icon="@drawable/timesheet"
+            android:title="Time Sheet" />
+        <item
+            android:id="@+id/secondemployeemarketing"
+            android:icon="@drawable/payroll"
+            android:title="Payrol" />
+        <item
+            android:id="@+id/thirdemployeemarketing"
+            android:icon="@drawable/attendance"
+            android:title="Attendance" />
+        <item
+            android:id="@+id/fourthemployeemarketing"
+            android:icon="@drawable/leave"
+            android:title="Leave" />
+
+        <item
+            android:id="@+id/fifthemployeemarketing"
+            android:icon="@drawable/forms"
+            android:title="Joining Form" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/comm1"
+                android:icon="@drawable/share"
+                android:title="Share"/>
+            <item
+                android:id="@+id/comm2"
+                android:icon="@drawable/contact_us"
+                android:title="Contact us"/>
+            <item
+                android:id="@+id/comm3"
+                android:icon="@drawable/rate_us"
+                android:title="Rate us"/>
+
+            <item
+                android:id="@+id/comm4"
+                android:icon="@drawable/logout"
+                android:title="Log Out"/>
+        </menu>
+    </item>
+
+</menu>

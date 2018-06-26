@@ -6,7 +6,6 @@
         android:name="android.hardware.camera"
         android:required="true" />
 
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
@@ -104,8 +103,7 @@
         <activity android:name=".Employee_Tech_TaskDetails" />
         <activity android:name=".Employee_Tech_ProjectManager_NewProject_SelectTeam" />
         <activity android:name=".Employee_Sales_EnterNewCustomer" />
-        <activity android:name=".Employee_Sales_CustomerDetails"></activity>
-
+        <activity android:name=".Employee_Sales_CustomerDetails" />
 
         <provider
             android:name="android.support.v4.content.FileProvider"
@@ -114,10 +112,14 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths">
-
-            </meta-data>
+                android:resource="@xml/file_paths" />
         </provider>
+
+        <activity
+            android:name=".Employee_Marketing"
+            android:label="@string/title_activity_employee__marketing"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Employee_Marketing_NewEvent"></activity>
     </application>
 
 </manifest>

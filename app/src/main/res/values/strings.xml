@@ -23,4 +23,5 @@
     <string name="title_activity_employee__tech__project_manager">Employee_Tech_ProjectManager
     </string>
     <string name="title_activity_employee__tech__manager">Employee_Tech_Manager</string>
+    <string name="title_activity_employee__marketing">Employee_Marketing</string>
 </resources>

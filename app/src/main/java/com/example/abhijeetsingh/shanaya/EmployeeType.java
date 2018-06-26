@@ -28,9 +28,15 @@ public class EmployeeType extends AppCompatActivity {
         expandableLayout2.toggle(); // toggle expand and collapse
     }
 
-    public void expandableButton3(View view) {
-        expandableLayout3 = (ExpandableRelativeLayout) findViewById(R.id.expandableLayout3);
-        expandableLayout3.toggle(); // toggle expand and collapse
+    public View expandableButton3(View view) {
+//        expandableLayout3 = (ExpandableRelativeLayout) findViewById(R.id.expandableLayout3);
+//        expandableLayout3.toggle(); // toggle expand and collapse
+
+        Intent i =new Intent(getApplicationContext(),Employee_Marketing.class);
+        startActivity(i);
+
+        return view;
+
     }
 
     public void expandableButton4(View view) {
