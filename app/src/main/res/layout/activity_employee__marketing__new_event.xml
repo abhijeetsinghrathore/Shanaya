@@ -1,9 +1,281 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Employee_Marketing_NewEvent">
 
-</android.support.constraint.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/neweventdetailsID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/bungee_inline"
+            android:text="New Event Details"
+            android:textSize="25sp" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/neweventcard1"
+            android:elevation="20dp"
+            android:layout_margin="20dp"
+            android:layout_below="@id/neweventdetailsID">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/eventnametextID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/bungee_inline"
+                    android:gravity="center_horizontal"
+                    android:text="Event"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Event Name"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/eventnametextID"
+                    android:id="@+id/eventnameID"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Location"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/eventnameID"
+                    android:id="@+id/locationID"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Organizer"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/locationID"
+                    android:id="@+id/organizerID"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Twitter Hashtag"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/organizerID"
+                    android:id="@+id/twitterID"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Company"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/twitterID"
+                    android:id="@+id/companyID"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Responsible User"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/companyID"
+                    android:id="@+id/responsibleUserID"
+                    />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/neweventcard2"
+            android:elevation="20dp"
+            android:layout_margin="20dp"
+            android:layout_below="@id/neweventcard1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Type of Event"
+                    android:layout_margin="10dp"
+                    android:id="@+id/typeofeventID"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Starting date"
+                    android:id="@+id/startdatetextID"
+                    android:layout_below="@+id/typeofeventID"
+                    android:layout_margin="10dp"
+                    android:textSize="15dp"/>
+
+                <LinearLayout
+                    android:id="@+id/linear1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/startdatetextID"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/startdateID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="3"
+                        android:hint="DD/MM/YYYY"
+                        android:inputType="date"
+                        android:drawableLeft="@drawable/dob"
+                        android:drawablePadding="3dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignRight="@+id/startdateID"
+                        android:layout_weight="1"
+                        android:src="@drawable/calendar"
+                        android:id="@+id/startdatecalendarID"
+                        android:padding="5dp"/>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="End Date"
+                    android:id="@+id/enddatetextID"
+                    android:layout_below="@id/linear1"
+                    android:layout_margin="10dp"
+                    android:textSize="15dp"/>
+                <LinearLayout
+                    android:id="@+id/linear2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/enddatetextID"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/enddateID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="3"
+                        android:hint="DD/MM/YYYY"
+                        android:inputType="date"
+                        android:drawableLeft="@drawable/dob"
+                        android:drawablePadding="3dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignRight="@+id/enddateID"
+                        android:layout_weight="1"
+                        android:src="@drawable/calendar"
+                        android:id="@+id/enddatecalendarID"
+                        android:padding="5dp"/>
+
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Timezone"
+                    android:layout_margin="10dp"
+                    android:id="@+id/timezoneID"
+                    android:layout_below="@id/linear2"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/neweventcard3"
+            android:elevation="20dp"
+            android:layout_margin="20dp"
+            android:layout_below="@id/neweventcard2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/registrationstextID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/bungee_inline"
+                    android:gravity="center_horizontal"
+                    android:text="Registrations"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Minimum Reserved Seats"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/registrationstextID"
+                    android:id="@+id/minreservedseatsID"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Maximum Available Seats"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/minreservedseatsID"
+                    android:id="@+id/maxavailableseatsID"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Current Registrations"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/maxavailableseatsID"
+                    android:id="@+id/currentregistrationsID"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Number of Partcipants"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/currentregistrationsID"
+                    android:id="@+id/noofparticipantsID"
+                    />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:layout_width="121dp"
+            android:layout_height="50dp"
+            android:text="SAVE"
+            android:textColor="@color/colorPrimary"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_button"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/neweventcard3"
+            android:id="@+id/saveeventID"/>
+
+    </RelativeLayout>
+
+</ScrollView>

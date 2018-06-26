@@ -119,7 +119,8 @@
             android:name=".Employee_Marketing"
             android:label="@string/title_activity_employee__marketing"
             android:theme="@style/AppTheme" />
-        <activity android:name=".Employee_Marketing_NewEvent"></activity>
+        <activity android:name=".Employee_Marketing_NewEvent" />
+        <activity android:name=".Employee_Markerting_EventDetails"></activity>
     </application>
 
 </manifest>
